@@ -1,7 +1,11 @@
 data = {
     "mv1_id": "896 4511 4895",
     "mv1_passcode": "724012",
+<<<<<<< HEAD
     "mv1_url": "https://us02web.zoom.us/j/89645114895?pwd=cVNpR0lZMjFEVDJmWmdxQmR5UzMydz09",
+=======
+    "mv1_url": "https: //us02web.zoom.us/j/89645114895?pwd=cVNpR0lZMjFEVDJmWmdxQmR5UzMydz09",
+>>>>>>> 61a4bd0324edc6689f24309b129d9fa98e3818d0
 
     "mv2_id": "826 5257 6038",
     "mv2_passcode": "061249 ",
