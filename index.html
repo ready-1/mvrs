@@ -94,32 +94,22 @@
 
 
 
+            <script type="text/javascript" src="data.js"></script>
             <script>
                 $(document).ready(function() {
 
-                    var mv1_id = "843 6397 3835";
-                    var mv1_passcode = "210188";
-                    var mv1_url = "https://us02web.zoom.us/j/84363973835?pwd=YXpRRjdwOEkrNkJRYmM4VkpNeDRxZz09";
 
-                    var mv2_id = "826 5257 6038";
-                    var mv2_passcode = "061249";
-                    var mv2_url = "https://us02web.zoom.us/j/82652576038?pwd=Tk1COGp0cVJQYlplcUd3eDZrcm5sdz09";
+                    $("#mv1-meeting-id").text("Meeting Code: " + data.mv1_id);
+                    $("#mv1-passcode").text("Passcode: " + data.mv1_passcode);
+                    $("#mv1-url").attr("href", data.mv1_url);
 
-                    var mv3_id = "939 9901 0887";
-                    var mv3_passcode = "324275";
-                    var mv3_url = "https://zoom.us/j/93999010887?pwd=TmYyRVJ2bWFGdUJna3kxSEY3K3ZRQT09";
+                    $("#mv2-meeting-id").text("Meeting Code: " + data.mv2_id);
+                    $("#mv2-passcode").text("Passcode: " + data.mv2_passcode);
+                    $("#mv2-url").attr("href", data.mv2_url);
 
-                    $("#mv1-meeting-id").text("Meeting Code: " + mv1_id);
-                    $("#mv1-passcode").text("Passcode: " + mv1_passcode);
-                    $("#mv1-url").attr("href", mv1_url);
-
-                    $("#mv2-meeting-id").text("Meeting Code: " + mv2_id);
-                    $("#mv2-passcode").text("Passcode: " + mv2_passcode);
-                    $("#mv2-url").attr("href", mv2_url);
-
-                    $("#mv3-meeting-id").text("Meeting Code: " + mv3_id);
-                    $("#mv3-passcode").text("Passcode: " + mv3_passcode);
-                    $("#mv3-url").attr("href", mv3_url);
+                    $("#mv3-meeting-id").text("Meeting Code: " + data.mv3_id);
+                    $("#mv3-passcode").text("Passcode: " + data.mv3_passcode);
+                    $("#mv3-url").attr("href", data.mv3_url);
 
                 });
             </script>
