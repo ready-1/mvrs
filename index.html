@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <div class="container">
         <div class="col-6">
 
@@ -25,36 +26,17 @@
                         <h5 class="card-title bg-danger text-white py-2 pl-2">Multiviewer 1</h5>
                         <div class="pl-2">
                             <p class="card-text">The Program Multiviewer Scott uses to direct.</p>
-                            <p class="card-text">Meeting ID: 843 6397 3835</br>
+                            <p class="card-text" id="mv1-meeting-id">Meeting ID: foo</br>
                             </p>
-                            <p class="card-text">Passcode: 210188</br>
+                            <p class="card-text" id="mv1-passcode">Passcode: foo</br>
                             </p>
                         </div>
                         <div class="pl-5 mt-3">
-                            <a href="https://us02web.zoom.us/j/84363973835?pwd=YXpRRjdwOEkrNkJRYmM4VkpNeDRxZz09" class="btn btn-primary mx-auto">Go to MVR 1</a>
+                            <a href="#" class="btn btn-primary mx-auto" id="mv1-url">Go to MVR 1</a>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-            <!-- 
-                    ZOOM MultiViewer 1 – w/PGM AUDIO 
-                    https://us02web.zoom.us/j/84363973835?pwd=YXpRRjdwOEkrNkJRYmM4VkpNeDRxZz09 
-                    Meeting ID: 843 6397 3835 
-                    Passcode: 210188 
-
-                    ZOOM MultiViewer 2 
-                    https://us02web.zoom.us/j/82652576038?pwd=Tk1COGp0cVJQYlplcUd3eDZrcm5sdz09 
-                    Meeting ID: 826 5257 6038 
-                    Passcode: 061249 
-                    
-                    ZOOM MultiViewer 3 – inbound Callers 
-                    https://zoom.us/j/93999010887?pwd=TmYyRVJ2bWFGdUJna3kxSEY3K3ZRQT09 
-                    Meeting ID: 939 9901 0887 
-                    Passcode: 324275 
-                -->
 
             <!-- Multiviewer 2 -->
             <div class="row pt-3">
@@ -64,13 +46,13 @@
                         <h5 class="card-title bg-success text-white py-2 pl-2">Multiviewer 2</h5>
                         <div class="pl-2">
                             <p class="card-text">The source monitor Scott uses.</p>
-                            <p class="card-text">Meeting ID: 826 5257 6038</br>
+                            <p class="card-text" id=mv2-meeting-id>Meeting ID: foo</br>
                             </p>
-                            <p class="card-text">Passcode: 061249</br>
+                            <p class="card-text" id="mv2-passcode">Passcode: foo</br>
                             </p>
                         </div>
                         <div class="pl-5 mt-3">
-                            <a href="https://us02web.zoom.us/j/82652576038?pwd=Tk1COGp0cVJQYlplcUd3eDZrcm5sdz09" class="btn btn-primary mx-auto">Go to MVR 1</a>
+                            <a href="#" class="btn btn-primary mx-auto" id="mv2-url">Go to MVR 2</a>
                         </div>
                     </div>
                 </div>
@@ -84,13 +66,13 @@
                         <h5 class="card-title bg-primary text-white py-2 pl-2">Multiviewer 3</h5>
                         <div class="pl-2">
                             <p class="card-text">The INBOUND callers and a Studio Spy Cam.</p>
-                            <p class="card-text">Meeting ID: 939 9901 0887</br>
+                            <p class="card-text" id=mv3-meeting-id>Meeting ID: foo</br>
                             </p>
-                            <p class="card-text">Passcode: 324275</br>
+                            <p class="card-text" id="mv3-passcode">Passcode: foo</br>
                             </p>
                         </div>
                         <div class="pl-5 mt-3">
-                            <a href="https://zoom.us/j/93999010887?pwd=TmYyRVJ2bWFGdUJna3kxSEY3K3ZRQT09" class="btn btn-primary mx-auto">Go to MVR 1</a>
+                            <a href="#" class="btn btn-primary mx-auto" id="mv3-url">Go to MVR 3</a>
                         </div>
                     </div>
                 </div>
@@ -109,6 +91,38 @@
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+            <script>
+                $(document).ready(function() {
+
+                    var mv1_id = "843 6397 3835";
+                    var mv1_passcode = "210188";
+                    var mv1_url = "https://us02web.zoom.us/j/84363973835?pwd=YXpRRjdwOEkrNkJRYmM4VkpNeDRxZz09";
+
+                    var mv2_id = "826 5257 6038";
+                    var mv2_passcode = "061249";
+                    var mv2_url = "https://us02web.zoom.us/j/82652576038?pwd=Tk1COGp0cVJQYlplcUd3eDZrcm5sdz09";
+
+                    var mv3_id = "939 9901 0887";
+                    var mv3_passcode = "324275";
+                    var mv3_url = "https://zoom.us/j/93999010887?pwd=TmYyRVJ2bWFGdUJna3kxSEY3K3ZRQT09";
+
+                    $("#mv1-meeting-id").text("Meeting Code: " + mv1_id);
+                    $("#mv1-passcode").text("Passcode: " + mv1_passcode);
+                    $("#mv1-url").attr("href", mv1_url);
+
+                    $("#mv2-meeting-id").text("Meeting Code: " + mv2_id);
+                    $("#mv2-passcode").text("Passcode: " + mv2_passcode);
+                    $("#mv2-url").attr("href", mv2_url);
+
+                    $("#mv3-meeting-id").text("Meeting Code: " + mv3_id);
+                    $("#mv3-passcode").text("Passcode: " + mv3_passcode);
+                    $("#mv3-url").attr("href", mv3_url);
+
+                });
+            </script>
 </body>
 
 </html>
